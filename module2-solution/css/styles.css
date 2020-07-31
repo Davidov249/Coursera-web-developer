@@ -4,6 +4,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
 }
 
 h1 {
@@ -22,9 +23,19 @@ p {
 
 .row {
     width: 100%;
-    position: relative;
-    box-sizing: border-box;
-    margin-left: -15px;
+    position: absolute;
+    margin-left: -10px;
+    margin-bottom: 30px;
+}
+
+.section {
+    border: 1px solid black;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    overflow: auto;
+    background-color: lightgray;
 }
 
 .sectitle {
@@ -33,26 +44,28 @@ p {
     border: 1px solid black;
     padding: 5px 15px 5px 15px;
     font-weight: bold;
+    position: relative;
+    top: 0;
+    right: 0;
 }
 #sec1 {
-    background-color: darksalmon;
+    background-color: salmon;
 }
 
 #sec2 {
-    background-color: firebrick;
+    background-color: maroon;
     color: white;
 }
 
 #sec3 {
-    background-color: darkkhaki;
+    background-color: bisque;
 }
 
 /*************************** Desktop view ***************************/
 @media (min-width: 992px) {
     .col-dsk-1, .col-dsk-2, .col-dsk-3, .col-dsk-4, .col-dsk-5, .col-dsk-6, .col-dsk-7, .col-dsk-8, .col-dsk-9, .col-dsk-10, .col-dsk-11, .col-dsk-12 {
         float: left;
-        border: 1px solid black;
-        margin-left: 10px;
+        margin-bottom: 15px;
     }
 
     .col-dsk-1 {
@@ -97,8 +110,6 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
     .col-tab-1, .col-tab-2, .col-tab-3, .col-tab-4, .col-tab-5, .col-tab-6, .col-tab-7, .col-tab-8, .col-tab-9, .col-tab-10, .col-tab-11, .col-tab-12 {
         float: left;
-        border: 1px solid black;
-        margin-left: 15px;
         margin-bottom: 15px;
     }
 
@@ -144,8 +155,6 @@ p {
 @media (max-width: 767px) {
     .col-mob-1, .col-mob-2, .col-mob-3, .col-mob-4, .col-mob-5, .col-mob-6, .col-mob-7, .col-mob-8, .col-mob-9, .col-mob-10, .col-mob-11, .col-mob-12 {
         float: left;
-        border: 1px solid black;
-        margin-left: 15px;
         margin-bottom: 15px;
     }
 
