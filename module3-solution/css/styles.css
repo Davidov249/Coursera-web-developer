@@ -1,0 +1,86 @@
+body {
+    font-size: 16px;
+    color:black;
+    background-color: white;
+}
+
+/** Header **/
+
+#header-nav {
+    background-color: darkgray;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+    float: left;
+}
+
+.navbar-brand h1 {
+    color: azure;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: azure;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle {
+    border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+    float: right;
+    margin-top: 15px;
+}
+
+#section {
+    height: 1000px;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** End of Header **/
+
+/******** Media Queries ***********/
+/******** Medium devices ***********/
+@media (min-width: 992px) {
+    
+}
+
+/******** Small devices ***********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/******** Extra small devices ***********/
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 { /* Restaurant name */
+        padding-top: 10px;
+        font-size: 5vw; /* 1vw = 1% of viewport width */
+    }
+
+    #collapsable-nav a {
+        font-size: 1.2em;
+    }
+}
+
